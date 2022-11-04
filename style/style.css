@@ -11,14 +11,14 @@ p {
     flex-wrap:wrap;
     text-align: center;
     justify-content: center;
-    margin: 20vh auto 0;
+    margin: 5vh auto 0;
     padding: 10px 0px;
     background-color: #181514;
     border: 2px solid #181514;
     border-radius: 30px;
     box-shadow: 5px 5px 25px #A39F9E;
     width: max-content;
-    height: 65vh;
+    height: max-content;
     text-align: center;
 }
 
@@ -30,16 +30,47 @@ p {
     border: 1px solid #C6BDBB;
     border-radius: 50px;
     max-width: 100%;
-    max-height: 7%;
-    font-size: 2rem;
+    max-height: 15%;
+    font-size: 4rem;
     text-align: right;
 }
+
+.del {
+    flex: 0 1 100%;
+    color: azure;
+    font-size: 4rem;
+}
+
+.del button {
+    background: black;
+    box-shadow: 1px 1px 1.5px #a39f9e;
+    color: #fff;
+    margin: auto 0px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    font-size: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.del button:hover {
+    filter: brightness(160%);
+}
+
+.del button:active {
+    filter: brightness(90%);
+}
+
 
 .btns {
     display:flex;
     flex-direction:row;
     margin: 15px 15px 50px;
     padding: 15px;
+    max-width: 100%;
 }
 
 
@@ -47,13 +78,13 @@ p {
     margin: 10px 10px ;
     display: flex;
     flex-wrap: wrap-reverse;
-    max-width: 35vw;
+    max-width: 50vw;
 }
 
 .numberArea button {
     width: 50px;
     background: black;
-    box-shadow: 5px 5px 25px #A39F9E;
+    box-shadow: 1px 1px 1.5px #a39f9e;
     color: #fff;
 }
 
@@ -62,14 +93,24 @@ p {
 }
 
 .numberEquals button{
-    margin: 15px;
-    padding: 10px;
+    margin: auto 0px;
+    padding: 10px 20px;
+    width: 7rem;
     height: auto;
-    font-size: 2rem;
+    font-size: 4rem;
     border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
 }
 
 
+.numberEquals button:hover {
+    filter: brightness(160%);
+}
+
+.numberEquals button:active {
+    filter: brightness(90%);
+}
 
 
 
