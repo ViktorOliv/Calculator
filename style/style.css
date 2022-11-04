@@ -1,19 +1,75 @@
 body {
     background-image: url("/img/7fa342abcaa90aabe3bfdbf12778b621.jpg");
-    /* background-size: 100%;
-    background-repeat: no-repeat; */
+}
 
+p {
+    margin: 0px;
 }
 
 .main {
-    margin: 200px auto 0;
-    padding: 10px;
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 20vh auto 0;
+    padding: 10px 0px;
     background-color: #181514;
     border: 2px solid #181514;
-    border-radius: 50px;
+    border-radius: 30px;
     box-shadow: 5px 5px 25px #A39F9E;
-    width: 400px;
-    height: 600px;
+    width: max-content;
+    height: 65vh;
     text-align: center;
 }
+
+.line {
+    flex: 0 1 100%;
+    margin: 10px 15px 0px;
+    padding: 10px 20px;
+    color: azure;
+    border: 1px solid #C6BDBB;
+    border-radius: 50px;
+    max-width: 100%;
+    max-height: 7%;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.btns {
+    display:flex;
+    flex-direction:row;
+    margin: 15px 15px 50px;
+    padding: 15px;
+}
+
+
+.numberArea {
+    margin: 10px 10px ;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    max-width: 35vw;
+}
+
+.numberArea button {
+    width: 50px;
+    background: black;
+    box-shadow: 5px 5px 25px #A39F9E;
+    color: #fff;
+}
+
+.numberEquals {
+    flex: 0 1 25%;
+}
+
+.numberEquals button{
+    margin: 15px;
+    padding: 10px;
+    height: auto;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+
+
+
 
