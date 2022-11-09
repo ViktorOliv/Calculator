@@ -17,3 +17,7 @@ function deleteAll () {
 }
 
 document.querySelector('.del button').onclick = deleteAll;
+
+document.querySelector('.numberArea').onclick = (event) => {
+
+}

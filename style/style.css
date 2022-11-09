@@ -18,7 +18,7 @@ p {
     border: 2px solid #181514;
     border-radius: 30px;
     box-shadow: 5px 5px 25px #A39F9E;
-    width: max-content;
+    width: 85vw;
     height: max-content;
     text-align: center;
 }
@@ -30,7 +30,7 @@ p {
     color: azure;
     border: 1px solid #C6BDBB;
     border-radius: 50px;
-    max-width: 100%;
+    max-width: 70vw;
     max-height: 15%;
     font-size: 4rem;
     text-align: right;
@@ -90,7 +90,8 @@ p {
 }
 
 .numberEquals {
-    flex: 0 1 25%;
+    flex: 1 1 25%;
+    padding-top: 3vh;
 }
 
 .numberEquals button{
