@@ -98,6 +98,7 @@ p {
     margin: auto 0px;
     padding: 1vh 1vw;
     width: 7vw;
+    min-width: 0.7em;
     height: auto;
     font-size: 4rem;
     border-radius: 50%;

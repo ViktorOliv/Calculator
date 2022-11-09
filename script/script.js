@@ -19,7 +19,7 @@ function deleteAll () {
 document.querySelector('.del button').onclick = deleteAll;
 
 
-// є баг
+// є баг, клік мимо працює а на кнопку ні
 document.querySelector('.numberArea').onclick = (event) => {
     if (!event.target.classList.contains('numberEquals')) return;
     //  pressed not button
@@ -32,8 +32,8 @@ document.querySelector('.numberArea').onclick = (event) => {
     
     // if press btn 0-9 or .
     if (digit.includes(key)) {
-        a += key;
-        console.log(a, b, sign);
-        out.textContent = a;
+        firstNumber += key;
+        console.log(firstNumber, lastNumber, sign);
+        out.textContent = firstNumber;
     }
 }
