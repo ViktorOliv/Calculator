@@ -16,15 +16,15 @@ function deleteAll () {
     out.textContent = 0;
 }
 
-document.querySelector('.del button').onclick = deleteAll;
+document.querySelector('.del .btn').onclick = deleteAll;
 
 
-// є баг, клік мимо працює а на кнопку ні
+// є баг, клік правіше від кнопки працює а на кнопку ні
 document.querySelector('.numberArea').onclick = (event) => {
-    if (!event.target.classList.contains('numberEquals')) return;
     //  pressed not button
-    if (event.target.classList.contains('.del button')) return;
+    if (!event.target.classList.contains('btn')) return;
     // pressed btn del all
+    if (event.target.classList.contains('.del .btn')) return;
 
     out.textContent = '';
     // take press button
@@ -36,4 +36,6 @@ document.querySelector('.numberArea').onclick = (event) => {
         console.log(firstNumber, lastNumber, sign);
         out.textContent = firstNumber;
     }
+
 }
+

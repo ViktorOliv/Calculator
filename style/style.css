@@ -38,18 +38,20 @@ p {
 
 .del {
     flex: 0 1 100%;
+    justify-content: center;
     color: azure;
     font-size: 4rem;
 }
 
-.del button {
+.del .btn {
     background: black;
     box-shadow: 1px 1px 1.5px #a39f9e;
     color: #fff;
-    margin: auto 0px;
+    margin: auto auto;
     margin-top: 30px;
     padding: 10px 20px;
-    width: auto;
+    width: 15vw;
+    min-width: max-content;
     height: auto;
     font-size: 4rem;
     border-radius: 50%;
@@ -57,11 +59,11 @@ p {
     user-select: none;
 }
 
-.del button:hover {
+.del .btn:hover {
     filter: brightness(160%);
 }
 
-.del button:active {
+.del .btn:active {
     filter: brightness(90%);
 }
 
@@ -69,6 +71,7 @@ p {
 .btns {
     display:flex;
     flex-direction:row;
+    justify-content: center;
     margin: 15px 15px 50px;
     padding: 15px;
     max-width: 100%;
@@ -82,7 +85,7 @@ p {
     max-width: 50vw;
 }
 
-.numberArea button {
+.numberArea .btn {
     width: 50px;
     background: black;
     box-shadow: 1px 1px 1.5px #a39f9e;
@@ -90,11 +93,11 @@ p {
 }
 
 .numberEquals {
-    flex: 1 1 25%;
+    flex: 1 0 25%;
     padding-top: 3vh;
 }
 
-.numberEquals button{
+.numberEquals .btn{
     margin: auto 0px;
     padding: 1vh 1vw;
     width: 7vw;
@@ -107,11 +110,11 @@ p {
 }
 
 
-.numberEquals button:hover {
+.numberEquals .btn:hover {
     filter: brightness(160%);
 }
 
-.numberEquals button:active {
+.numberEquals .btn:active {
     filter: brightness(90%);
 }
 
