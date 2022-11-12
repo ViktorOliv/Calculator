@@ -1,3 +1,7 @@
+// можна спробувати зробити цифри массивом щоб була можливість використовувати калькулятор 
+// для більшої кількості цифр
+
+
 let firstNumber = '',
     lastNumber ='',
     sign = '',
@@ -19,7 +23,6 @@ function deleteAll () {
 document.querySelector('.del .btn').onclick = deleteAll;
 
 
-// є баг, клік правіше від кнопки працює а на кнопку ні
 document.querySelector('.numberArea').onclick = (event) => {
     //  pressed not button
     if (!event.target.classList.contains('btn')) return;
@@ -36,6 +39,39 @@ document.querySelector('.numberArea').onclick = (event) => {
             firstNumber += key;
             out.textContent = firstNumber;
         }
+
+    // actions with more than 2 numbers not work ↓
+        // else if (firstNumber !== '' && lastNumber !== '') {
+        //     switch (sign) {
+        //         case "+":
+        //             firstNumber = (+firstNumber) + (+lastNumber);
+        //             break;
+        //         case "-":
+        //             firstNumber = firstNumber - lastNumber;
+        //             break;
+        //         case "*":
+        //             firstNumber = firstNumber * lastNumber;
+        //             break;
+        //         case "/":
+        //             if (lastNumber === '0') {
+        //                 out.textContent = '∞';
+        //                 firstNumber = '';
+        //                 lastNumber ='';
+        //                 sign = '';
+        //                 return;
+        //             }
+        //             firstNumber = firstNumber / lastNumber;
+        //             break;
+        //     }
+
+        //     firstNumber = (+firstNumber) + (+lastNumber);
+
+        //     lastNumber = key;
+        //     out.textContent = lastNumber;
+        //     console.log(firstNumber, lastNumber, sign);
+        // }
+    // actions with more than 2 numbers  not work↑
+
         else if (firstNumber !== '' && lastNumber !== '' && finish) {
             lastNumber = key;
             finish = false;
@@ -58,8 +94,14 @@ document.querySelector('.numberArea').onclick = (event) => {
     }
 
     if(key === '=') {
-        if (lastNumber === '') lastNumber = firstNumber;         
-        switch (sign) {
+        if (lastNumber === '') lastNumber = firstNumber;
+        
+        if (firstNumber === '' && lastNumber === '') {
+            out.textContent = 0 ;
+            return;
+        }
+
+                switch (sign) {
             case "+":
                 firstNumber = (+firstNumber) + (+lastNumber);
                 break;
