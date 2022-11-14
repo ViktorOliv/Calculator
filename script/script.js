@@ -40,38 +40,6 @@ document.querySelector('.numberArea').onclick = (event) => {
             out.textContent = firstNumber;
         }
 
-    // actions with more than 2 numbers not work ↓
-        // else if (firstNumber !== '' && lastNumber !== '') {
-        //     switch (sign) {
-        //         case "+":
-        //             firstNumber = (+firstNumber) + (+lastNumber);
-        //             break;
-        //         case "-":
-        //             firstNumber = firstNumber - lastNumber;
-        //             break;
-        //         case "*":
-        //             firstNumber = firstNumber * lastNumber;
-        //             break;
-        //         case "/":
-        //             if (lastNumber === '0') {
-        //                 out.textContent = '∞';
-        //                 firstNumber = '';
-        //                 lastNumber ='';
-        //                 sign = '';
-        //                 return;
-        //             }
-        //             firstNumber = firstNumber / lastNumber;
-        //             break;
-        //     }
-
-        //     firstNumber = (+firstNumber) + (+lastNumber);
-
-        //     lastNumber = key;
-        //     out.textContent = lastNumber;
-        //     console.log(firstNumber, lastNumber, sign);
-        // }
-    // actions with more than 2 numbers  not work↑
-
         else if (firstNumber !== '' && lastNumber !== '' && finish) {
             lastNumber = key;
             finish = false;
